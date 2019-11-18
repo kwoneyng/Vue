@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo App</title>
+  <style>
+    .todo-list {
+      display: inline-block;
+      width: 31%;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>Jason's Todo App</h1>
+    <todo-list category="취업준비"></todo-list>
+    <todo-list category="SSAFY"></todo-list>
+    <todo-list category="기타"></todo-list>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script src="todo-list.js"></script>
+
+  <script>
+    const app = new Vue({
+      el: '#app',
+    })
+  </script>
+</body>
+</html>
